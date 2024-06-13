@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Playlist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="locations">
+        <div class="container">
+        <h1>Video Playlist</h1>
+        <ul>
+            <!-- <li>
+              <a href="#" onclick="playVideo('assets/Javascript-1.mp4')"
+                >Javascript 1</a>
+              
+            </li>
+            <li>
+              <a href="#" onclick="playVideo('assets/Javascript-2.mp4')"
+                >Javascript 2</a>
+            </li> -->
+            <li>
+              <a href="#" onclick="playVideo('assets/github-page.mp4')"
+                >Github дээр кодоо байршуулж хэрхэн хуудас болгон live гаргах</a>
+            </li>
+        </ul>
+        <video id="videoPlayer" width="640" height="360" controls>
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="container">
+        <ul>
+          <li>Хязгааргүй боломж</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      function playVideo(src) {
+        var videoPlayer = document.getElementById("videoPlayer");
+        videoPlayer.src = src;
+        videoPlayer.play();
+      }
+    </script>
+  </body>
+</html>
