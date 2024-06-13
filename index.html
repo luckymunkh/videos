@@ -20,29 +20,44 @@
     </header>
 
     <section id="locations">
-        <div class="container">
-        <h1>Video Playlist</h1>
-        <ul>
-            <!-- <li>
-              <a href="#" onclick="playVideo('assets/Javascript-1.mp4')"
-                >Javascript 1</a>
-              
-            </li>
-            <li>
-              <a href="#" onclick="playVideo('assets/Javascript-2.mp4')"
-                >Javascript 2</a>
-            </li> -->
-            <li>
-              <a href="#" onclick="playVideo('assets/github-page.mp4')"
-                >Github дээр кодоо байршуулж хэрхэн хуудас болгон live гаргах</a>
-            </li>
+      <div class="container">
+        <ul id="playlist">
+          <li>
+            <h2>Javascript-1</h2>
+            <iframe
+              src="https://drive.google.com/file/d/1sJM2qxRvHp-UStQ1juQ6DUoywZjhJCd-/preview"
+              width="640"
+              height="360"
+              frameborder="0"
+              allowfullscreen="true"
+              scrolling="no"
+              >Javascript 1</iframe
+            >
+          </li>
+
+          <li>
+            <h2>Javascript-2</h2>
+            <iframe
+              src="https://drive.google.com/file/d/1TjNf5Cekxdly6RZZnyRqji_5rmGc00lD/preview"
+              width="640"
+              height="360"
+              frameborder="0"
+              allowfullscreen="true"
+              scrolling="no"
+              >Javascript 2</iframe
+            >
+          </li>
+
+          <li>
+            <a href="#" onclick="playVideo('assets/github-page.mp4')"
+              >Github дээр кодоо байршуулж хэрхэн хуудас болгон live гаргах</a
+            >
+          </li>
         </ul>
         <video id="videoPlayer" width="640" height="360" controls>
-            <source src="" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      
+          <source id="videoSource" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
 
